@@ -81,7 +81,7 @@ img{max-width:100%;display:block}
 }
 .hero-bg{
   position:absolute;inset:0;
-  background:url('https://image.qwenlm.ai/public_source/51767187-0278-4927-ad60-44092ca7163d/195fd8876-c967-4b14-b376-6b22af4e6c97.png') center/cover no-repeat;
+  background:url('../assets/images/hero2.jpg') center/cover no-repeat;
 }
 .hero-bg::after{
   content:'';position:absolute;inset:0;
@@ -104,10 +104,12 @@ img{max-width:100%;display:block}
   content:'';width:40px;height:2px;background:var(--red);
 }
 .hero h1{
-  font-size:clamp(56px,10vw,140px);
+  font-family:'Rampart One','Rubik Wet Paint',cursive;
+  font-size:clamp(40px,7vw,90px);
   font-weight:400;
   line-height:.9;
   margin-bottom:24px;
+  letter-spacing:.04em;
 }
 .hero h1 .accent{color:var(--red);display:block}
 .hero p{
