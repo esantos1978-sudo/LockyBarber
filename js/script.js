@@ -41,6 +41,27 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// ---------- SWIPER SERVICIOS (solo móvil) ----------
+if (window.innerWidth < 900) {
+  new Swiper('.services-swiper-mobile', {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    centeredSlides: true,
+    loop: true,
+    pagination: { el: '.services-pagination', clickable: true },
+  });
+}
+
+// ---------- SWIPER TESTIMONIOS (solo móvil) ----------
+if (window.innerWidth < 900) {
+  new Swiper('.testimonials-swiper-mobile', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    pagination: { el: '.testimonials-pagination', clickable: true },
+  });
+}
+
 // ---------- SWIPER GALERÍA ----------
 new Swiper('.gallery-swiper', {
   slidesPerView: 1,
