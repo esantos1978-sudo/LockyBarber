@@ -490,45 +490,7 @@ footer{
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* RESPONSIVE */
-/* SWIPER MÓVIL para Servicios y Testimonios */
-.services-swiper-mobile,
-.testimonials-swiper-mobile {
-  display: none;
-}
-.services-swiper-mobile .swiper-slide,
-.testimonials-swiper-mobile .swiper-slide {
-  height: auto;
-}
-.services-swiper-mobile .service-card,
-.testimonials-swiper-mobile .testimonial {
-  margin: 0;
-}
-.services-swiper-mobile .swiper-pagination-bullet,
-.testimonials-swiper-mobile .swiper-pagination-bullet {
-  background: var(--gray);
-  opacity: .4;
-}
-.services-swiper-mobile .swiper-pagination-bullet-active,
-.testimonials-swiper-mobile .swiper-pagination-bullet-active {
-  background: var(--red);
-  opacity: 1;
-}
-
 @media(max-width:900px){
-  .services-grid{
-    display:block;
-  }
-  .services-swiper-mobile{
-    display:block;
-    padding-bottom:50px;
-  }
-  .testimonials-grid{
-    display:block;
-  }
-  .testimonials-swiper-mobile{
-    display:block;
-    padding-bottom:50px;
-  }
   /* Menú móvil con animación */
   .nav-links{
     position:fixed;
