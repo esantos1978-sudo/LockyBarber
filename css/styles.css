@@ -485,6 +485,40 @@ footer{
   flex-wrap:wrap;gap:16px;
 }
 
+/* WHATSAPP PRIMARY */
+.whatsapp-primary{
+  text-align:center;
+  margin-bottom:48px;
+}
+.whatsapp-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:16px;
+  background:#25D366;
+  color:#fff;
+  padding:20px 40px;
+  border-radius:50px;
+  font-size:18px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  transition:all .3s;
+  cursor:pointer;
+  border:none;
+  text-decoration:none;
+}
+.whatsapp-btn:hover{
+  background:#128C7E;
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(37,211,102,.4);
+}
+.whatsapp-sub{
+  color:var(--gray);
+  font-size:14px;
+  margin-top:20px;
+  text-align:center;
+}
+
 /* ANIMATIONS */
 .reveal{opacity:0;transform:translateY(30px);transition:all .8s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
