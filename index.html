@@ -1,468 +1,761 @@
-
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <style>
-                body {
-                  background-color: white; /* Ensure the iframe has a white background */
-                }
-
-                .map-wrap iframe{width:100%;height:100%;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.3)}
-
-.map-wrap iframe{width:100%;height:100%;border:0}
-
-
-              </style>
-                        </head>
-                        <body>
-                            <!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Locky Barber — Urban Barber Shop en Madrid</title>
-<meta name="description" content="Locky Barber, barbería urbana en Madrid. Cortes, fades, arreglo de barba y afeitado tradicional. Valoración 5★ en Google con 134 reseñas. Reserva tu cita online." />
-<meta name="keywords" content="barbería Madrid, barber shop, corte de pelo, fade, degradado, arreglo barba, Locky Barber" />
-<meta name="author" content="Locky Barber" />
-<meta property="og:title" content="Locky Barber — Urban Barber Shop" />
-<meta property="og:description" content="Cortes que definen estilo. Barbería urbana en el corazón de Madrid." />
-<meta property="og:type" content="website" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpolygon points='18,2 34,18 18,34 2,18' fill='%23e10600'/%3E%3Cpath d='M18 8v20M10 12l8 6 8-6' stroke='%23fff' stroke-width='2.5' fill='none'/%3E%3C/svg%3E" />
-<link rel="preconnect" href="https://cdn.jsdelivr.net" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/bebas-neue@latest/index.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/inter@latest/index.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container nav-inner">
-    <a href="#" class="logo">
-      <span class="logo-mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 2v20M4 6l8 6 8-6"/></svg>
-      </span>
-      LOCKY<span>.</span>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#opiniones">Opiniones</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <a href="#reserva" class="nav-cta">Reservar</a>
-    <button class="burger" id="burger" aria-label="Abrir menú">
-  <span class="burger-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-</button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="container hero-content">
-    <div class="hero-tag">Urban Barber Shop · Est. 2018</div>
-    <h1>CORTES QUE<br/><span class="accent">DEFINEN ESTILO.</span></h1>
-    <p>Más que una barbería, un espacio urbano donde la precisión, el carácter y la actitud se fusionan. Bienvenido a Locky Barber.</p>
-    <div class="hero-actions">
-      <a href="#reserva" class="btn btn-primary">Reservar Cita →</a>
-      <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
-    </div>
-  </div>
-  <div class="hero-stats">
-    <div class="stat"><div class="stat-num">134</div><div class="stat-label">Reseñas Google</div></div>
-    <div class="stat"><div class="stat-num">5.0★</div><div class="stat-label">Valoración Media</div></div>
-    <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Años de Experiencia</div></div>
-  </div>
-  <div class="scroll-indicator">Scroll ↓</div>
-</section>
-
-<!-- SERVICIOS -->
-<section class="services" id="servicios">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Lo que hacemos</div>
-      <h2 class="section-title">NUESTROS <span class="accent">SERVICIOS</span></h2>
-      <p class="section-sub">Cada servicio es una experiencia. Precisión, técnica y estilo urbano en cada detalle.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal has-bg" style="background-image:url('assets/images/servicios_corte_clasico.jpg')">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 3v18M18 3v18M6 12h12M4 6h16M4 18h16"/></svg>
-        </div>
-        <h3>Corte Clásico</h3>
-        <p>Corte a tijera o máquina con acabado perfecto. Incluye lavado y styling.</p>
-        <div class="service-price">18€</div>
-      </div>
-      <div class="service-card reveal has-bg" style="background-image:url('assets/images/servicios_degradado_barba.jpg')">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M8 2v4M16 2v4M4 6h16v14H4zM8 10h8M8 14h8M8 18h5"/></svg>
-        </div>
-        <h3>Fade & Degradado</h3>
-        <p>Degradados precisos, low, mid o high fade. La especialidad de la casa.</p>
-        <div class="service-price">20€</div>
-      </div>
-      <div class="service-card reveal has-bg" style="background-image:url('assets/images/servicios_corte_caballero.jpg')">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2a5 5 0 015 5v4a5 5 0 01-10 0V7a5 5 0 015-5zM6 11v10M18 11v10M6 21h12"/></svg>
-        </div>
-        <h3>Arreglo de Barba</h3>
-        <p>Perfilado, recorte y tratamiento con navaja y toalla caliente.</p>
-        <div class="service-price">12€</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12h18M12 3v18M5 5l14 14M19 5L5 19"/></svg>
-        </div>
-        <h3>Afeitado Tradicional</h3>
-        <p>Afeitado a navaja con ritual completo: toalla caliente, aceites y bálsamo.</p>
-        <div class="service-price">15€</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 010 18M3 12h18"/></svg>
-        </div>
-        <h3>Corte + Barba</h3>
-        <p>El combo completo. Corte a tu medida y arreglo de barba con acabado premium.</p>
-        <div class="service-price">28€</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
-        </div>
-        <h3>Diseño & Tinte</h3>
-        <p>Diseños personalizados, líneas, tinte y coloración para destacar.</p>
-        <div class="service-price">desde 25€</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALERIA -->
-<section class="gallery" id="galeria">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Nuestro trabajo</div>
-      <h2 class="section-title">GALERÍA <span class="accent">URBANA</span></h2>
-      <p class="section-sub">Una muestra de lo que hacemos cada día. Estilo, técnica y actitud.</p>
-    </div>
-  </div>
-  <div class="swiper gallery-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="slide">
-          <img src="assets/images/Corte2_mod.jpg" alt="Corte moderno" loading="lazy"/>
-          <div class="slide-overlay"><div><span>Estilo moderno</span><h4>CORTE 2</h4></div></div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide">
-          <img src="assets/images/corte17_mod.jpg" alt="Corte degradado" loading="lazy"/>
-          <div class="slide-overlay"><div><span>Degradado</span><h4>CORTE 17</h4></div></div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide">
-          <img src="assets/images/corte28_mod.jpg" alt="Corte premium" loading="lazy"/>
-          <div class="slide-overlay"><div><span>Estilo premium</span><h4>CORTE 28</h4></div></div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
-
-<!-- TESTIMONIOS -->
-<section class="testimonials" id="opiniones">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Lo que dicen</div>
-      <h2 class="section-title">OPINIONES <span class="accent">REALES</span></h2>
-      <p class="section-sub">134 clientes ya han confiado en nosotros. Esta es su historia.</p>
-    </div>
-    <div class="google-rating reveal">
-      <div class="google-logo">
-        <span class="g1">G</span><span class="g2">o</span><span class="g3">o</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span>
-      </div>
-      <div class="stars">★★★★★</div>
-      <div>
-        <div class="rating-num">5.0 / 5.0</div>
-        <div class="rating-text">Basado en 134 reseñas</div>
-      </div>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial reveal">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-stars">★★★★★</div>
-        <p>El mejor sitio para cortarse el pelo en la ciudad. Ambiente brutal, trato cercano y el fade me lo dejan siempre impecable. No cambio de barbería.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">DM</div>
-          <div class="author-info"><strong>Daniel M.</strong><span>Cliente habitual</span></div>
-        </div>
-      </div>
-      <div class="testimonial reveal">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-stars">★★★★★</div>
-        <p>Llevo 3 años viniendo y nunca me han fallado. El afeitado a navaja con toalla caliente es una experiencia que todo hombre debería probar.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">JR</div>
-          <div class="author-info"><strong>Javier R.</strong><span>Desde 2021</span></div>
-        </div>
-      </div>
-      <div class="testimonial reveal">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-stars">★★★★★</div>
-        <p>Profesionales de verdad. Te asesoran, te escuchan y el resultado siempre supera expectativas. El local tiene un rollo urbano que engancha.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">AS</div>
-          <div class="author-info"><strong>Alejandro S.</strong><span>Cliente nuevo</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BLOG -->
-<section class="blog" id="blog">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Tendencias</div>
-      <h2 class="section-title">BLOG <span class="accent">LOCKY</span></h2>
-      <p class="section-sub">Últimas tendencias, consejos de estilo y todo lo que necesitas saber sobre el mundo del grooming masculino.</p>
-    </div>
-    <div class="blog-grid">
-      <article class="blog-card reveal">
-        <div class="blog-img">
-          <img src="https://image.qwenlm.ai/public_source/51767187-0278-4927-ad60-44092ca7163d/120b3f3ca-fdec-4802-81a1-39b4847af319.png" alt="Tendencias" loading="lazy"/>
-          <span class="blog-tag">Tendencias 2026</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">02 · JUL · 2026 · 5 MIN</div>
-          <h3>Los 5 cortes que arrasarán este verano</h3>
-          <p>Desde el textured crop hasta el buzz cut con diseño, repasamos los estilos que dominarán las calles.</p>
-          <a href="javascript:void(0)" class="read-more">Leer más →</a>
-        </div>
-      </article>
-      <article class="blog-card reveal">
-        <div class="blog-img">
-          <img src="https://image.qwenlm.ai/public_source/51767187-0278-4927-ad60-44092ca7163d/13bd8c5c6-72a7-4ad0-b88a-c02522baf737.png" alt="Barba" loading="lazy"/>
-          <span class="blog-tag">Grooming</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">28 · JUN · 2026 · 4 MIN</div>
-          <h3>Cómo mantener tu barba perfecta en casa</h3>
-          <p>Rutina completa de cuidado: aceites, cepillos, hidratación y los errores que debes evitar.</p>
-          <a href="javascript:void(0)" class="read-more">Leer más →</a>
-        </div>
-      </article>
-      <article class="blog-card reveal">
-        <div class="blog-img">
-          <img src="https://image.qwenlm.ai/public_source/51767187-0278-4927-ad60-44092ca7163d/1498e7921-a037-4007-87bf-8add48bf4cb5.png" alt="Herramientas" loading="lazy"/>
-          <span class="blog-tag">Consejos</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">20 · JUN · 2026 · 6 MIN</div>
-          <h3>Guía definitiva: qué máquina de corte comprar</h3>
-          <p>Analizamos las mejores máquinas del mercado para profesionales y para uso doméstico.</p>
-          <a href="javascript:void(0)" class="read-more">Leer más →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- RESERVA -->
-<section class="booking" id="reserva">
-  <div class="container">
-    <div class="whatsapp-primary reveal">
-      <a href="https://wa.me/34600000000?text=Hola,%20quiero%20reservar%20una%20cita%20en%20Locky%20Barber" target="_blank" rel="noopener" class="whatsapp-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span>Reservar por WhatsApp</span>
-      </a>
-      <p class="whatsapp-sub">Te respondemos en menos de 1 hora</p>
-    </div>
-    <div class="container booking-wrapper">
-    <div class="booking-info reveal">
-      <div class="section-tag">Reserva online</div>
-      <h2>RESERVA TU <span class="accent">CITA</span></h2>
-      <p>Elige día, hora y servicio. Te confirmamos al instante. Sin esperas, sin complicaciones.</p>
-      <ul class="booking-features">
-        <li>Confirmación inmediata por email y SMS</li>
-        <li>Cancelación gratuita hasta 24h antes</li>
-        <li>Pago en local o con tarjeta</li>
-        <li>Atención personalizada garantizada</li>
-      </ul>
-    </div>
-    <form class="booking-form reveal" id="bookingForm">
-      <div class="form-group">
-        <label>Nombre completo</label>
-        <input type="text" name="nombre" required placeholder="Tu nombre"/>
-      </div>
-      <div class="form-group">
-        <label>Teléfono</label>
-        <input type="tel" name="telefono" required placeholder="+34 600 000 000"/>
-      </div>
-      <div class="form-group">
-        <label>Servicio</label>
-        <select name="servicio" required>
-          <option value="">Selecciona un servicio</option>
-          <option>Corte Clásico — 18€</option>
-          <option>Fade & Degradado — 20€</option>
-          <option>Arreglo de Barba — 12€</option>
-          <option>Afeitado Tradicional — 15€</option>
-          <option>Corte + Barba — 28€</option>
-          <option>Diseño & Tinte — desde 25€</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Fecha</label>
-          <input type="date" name="fecha" required/>
-        </div>
-        <div class="form-group">
-          <label>Hora</label>
-          <input type="time" name="hora" required/>
-        </div>
-      </div>
-      <button type="submit" class="form-submit">Confirmar Reserva →</button>
-    </form>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section class="contact" id="contacto">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag">Encuéntranos</div>
-      <h2 class="section-title">DÓNDE <span class="accent">ESTAMOS</span></h2>
-      <p class="section-sub">Visítanos en el corazón de la ciudad. Te esperamos.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <h4>Dirección</h4>
-            <p>Calle Alejandro Sánchez, 16<br/>28019 Madrid, España</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-          </div>
-          <div>
-            <h4>Teléfono</h4>
-            <p><a href="tel:+34910000000">+34 910 000 000</a></p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <h4>Email</h4>
-            <p><a href="mailto:hola@lockybarber.com">hola@lockybarber.com</a></p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <h4>Horario</h4>
-            <p>Lun – Vie: 10:00 – 21:00<br/>Sáb: 10:00 – 15:00<br/>Dom: Cerrado</p>
-          </div>
-        </div>
-      </div>
-      <div class="map-wrap reveal">
-        <iframe 
-          src="https://maps.google.com/maps?q=Calle+Alejandro+Sanchez+16+28019+Madrid&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-          loading="lazy" 
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <a href="#" class="logo" style="margin-bottom:16px">
-          <span class="logo-mark">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 2v20M4 6l8 6 8-6"/></svg>
-          </span>
-          LOCKY<span>.</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locky Barber — Urban Barber Shop en Madrid</title>
+    <meta
+      name="description"
+      content="Locky Barber, barbería urbana en Madrid. Cortes, fades, arreglo de barba y afeitado tradicional. Valoración 5★ en Google con 134 reseñas. Reserva tu cita online."
+    />
+    <meta
+      name="keywords"
+      content="barbería Madrid, barber shop, corte de pelo, fade, degradado, arreglo barba, Locky Barber"
+    />
+    <meta name="author" content="Locky Barber" />
+    <meta property="og:title" content="Locky Barber — Urban Barber Shop" />
+    <meta
+      property="og:description"
+      content="Cortes que definen estilo. Barbería urbana en el corazón de Madrid."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpolygon points='18,2 34,18 18,34 2,18' fill='%23e10600'/%3E%3Cpath d='M18 8v20M10 12l8 6 8-6' stroke='%23fff' stroke-width='2.5' fill='none'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/fontsource/css/bebas-neue@latest/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/fontsource/css/inter@latest/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#" class="logo">
+          <img
+            src="assets/images/logo.png"
+            alt="Locky Barber"
+            class="logo-img"
+          />
         </a>
-        <p>Barbería urbana en el corazón de Madrid. Cortes, estilo y actitud desde 2018.</p>
-        <div class="socials">
-          <a href="#" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-          <a href="#" class="social" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
-          <a href="#" class="social" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg></a>
-          <a href="#" class="social" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.14.18-.357.295-.6.295l.213-3.053 5.56-5.023c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Navegación</h4>
-        <ul>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#galeria">Galería</a></li>
           <li><a href="#opiniones">Opiniones</a></li>
           <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <a href="#reserva" class="nav-cta">Reservar</a>
+        <button class="burger" id="burger" aria-label="Abrir menú">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
       </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Aviso legal</a></li>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Cookies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <ul>
-          <li>C/ Alejandro Sánchez, 16</li>
-          <li>28019 Madrid</li>
-          <li>+34 910 000 000</li>
-          <li>hola@lockybarber.com</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>© 2026 Locky Barber. Todos los derechos reservados.</div>
-      <div>Diseñado con actitud urbana 💈</div>
-    </div>
-  </div>
-</footer>
+    </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Urban Barber Shop · Est. 2018
+        </div>
+        <h1 class="hero-title">
+          Tu estilo,<br /><span class="hero-title-accent">nuestra pasión</span>
+        </h1>
+        <p class="hero-subtitle">
+          Cortes, color y tratamientos de alta calidad.
+          <br class="hide-mobile" />Donde cada detalle cuenta para realzar tu
+          mejor versión.
+        </p>
+        <div class="hero-actions">
+          <a href="#reserva" class="btn btn-primary btn-hero"
+            >Reserva tu cita ahora</a
+          >
+          <a href="#servicios" class="btn btn-outline btn-hero-outline"
+            >Descubrir servicios</a
+          >
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-icon">★</span>
+            <span>5.0 · 134 reseñas</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>8+ años de experiencia</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-icon">✂</span>
+            <span>Profesionales certificados</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">Scroll ↓</div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Lo que hacemos</div>
+          <h2 class="section-title">
+            NUESTROS <span class="accent">SERVICIOS</span>
+          </h2>
+          <p class="section-sub">
+            Cada servicio es una experiencia. Precisión, técnica y estilo urbano
+            en cada detalle.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div
+            class="service-card reveal has-bg"
+            style="
+              background-image: url(&quot;assets/images/servicios_corte_clasico.jpg&quot;);
+            "
+          >
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M6 3v18M18 3v18M6 12h12M4 6h16M4 18h16" />
+              </svg>
+            </div>
+            <h3>Corte Clásico</h3>
+            <p>
+              Corte a tijera o máquina con acabado perfecto. Incluye lavado y
+              styling.
+            </p>
+            <div class="service-price">18€</div>
+          </div>
+          <div
+            class="service-card reveal has-bg"
+            style="
+              background-image: url(&quot;assets/images/servicios_degradado_barba.jpg&quot;);
+            "
+          >
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M8 2v4M16 2v4M4 6h16v14H4zM8 10h8M8 14h8M8 18h5" />
+              </svg>
+            </div>
+            <h3>Fade & Degradado</h3>
+            <p>
+              Degradados precisos, low, mid o high fade. La especialidad de la
+              casa.
+            </p>
+            <div class="service-price">20€</div>
+          </div>
+          <div
+            class="service-card reveal has-bg"
+            style="
+              background-image: url(&quot;assets/images/servicios_corte_caballero.jpg&quot;);
+            "
+          >
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path
+                  d="M12 2a5 5 0 015 5v4a5 5 0 01-10 0V7a5 5 0 015-5zM6 11v10M18 11v10M6 21h12"
+                />
+              </svg>
+            </div>
+            <h3>Arreglo de Barba</h3>
+            <p>
+              Perfilado, recorte y tratamiento con navaja y toalla caliente.
+            </p>
+            <div class="service-price">12€</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M3 12h18M12 3v18M5 5l14 14M19 5L5 19" />
+              </svg>
+            </div>
+            <h3>Afeitado Tradicional</h3>
+            <p>
+              Afeitado a navaja con ritual completo: toalla caliente, aceites y
+              bálsamo.
+            </p>
+            <div class="service-price">15€</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3a9 9 0 010 18M3 12h18" />
+              </svg>
+            </div>
+            <h3>Corte + Barba</h3>
+            <p>
+              El combo completo. Corte a tu medida y arreglo de barba con
+              acabado premium.
+            </p>
+            <div class="service-price">28€</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" />
+              </svg>
+            </div>
+            <h3>Diseño & Tinte</h3>
+            <p>
+              Diseños personalizados, líneas, tinte y coloración para destacar.
+            </p>
+            <div class="service-price">desde 25€</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Nuestro trabajo</div>
+          <h2 class="section-title">
+            GALERÍA <span class="accent">URBANA</span>
+          </h2>
+          <p class="section-sub">
+            Una muestra de lo que hacemos cada día. Estilo, técnica y actitud.
+          </p>
+        </div>
+      </div>
+      <div class="swiper gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide">
+              <img
+                src="assets/images/Corte2_mod.jpg"
+                alt="Corte moderno con degradado"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <div>
+                  <span>Estilo moderno</span>
+                  <h4>FADE PERFECTO</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img
+                src="assets/images/corte17_mod.jpg"
+                alt="Corte degradado premium"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <div>
+                  <span>Degradado</span>
+                  <h4>MID FADE</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img
+                src="assets/images/corte28_mod.jpg"
+                alt="Corte premium con barba"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <div>
+                  <span>Estilo premium</span>
+                  <h4>CORTE + BARBA</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img
+                src="assets/images/Corte1.jpeg"
+                alt="Corte clásico elegante"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <div>
+                  <span>Clásico</span>
+                  <h4>ELEGANCIA</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img
+                src="assets/images/Corte5.jpeg"
+                alt="Diseño y creatividad"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <div>
+                  <span>Creatividad</span>
+                  <h4>DISEÑO</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide">
+              <img
+                src="assets/images/exterior1.jpeg"
+                alt="Local Locky Barber"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <div>
+                  <span>Nuestro espacio</span>
+                  <h4>EL LOCAL</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials" id="opiniones">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Lo que dicen</div>
+          <h2 class="section-title">
+            OPINIONES <span class="accent">REALES</span>
+          </h2>
+          <p class="section-sub">
+            134 clientes ya han confiado en nosotros. Esta es su historia.
+          </p>
+        </div>
+        <div class="google-rating reveal">
+          <div class="google-logo">
+            <span class="g1">G</span><span class="g2">o</span
+            ><span class="g3">o</span><span class="g4">g</span
+            ><span class="g5">l</span><span class="g6">e</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <div>
+            <div class="rating-num">5.0 / 5.0</div>
+            <div class="rating-text">Basado en 134 reseñas</div>
+          </div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial reveal">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p>
+              El mejor sitio para cortarse el pelo en la ciudad. Ambiente
+              brutal, trato cercano y el fade me lo dejan siempre impecable. No
+              cambio de barbería.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DM</div>
+              <div class="author-info">
+                <strong>Daniel M.</strong><span>Cliente habitual</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p>
+              Llevo 3 años viniendo y nunca me han fallado. El afeitado a navaja
+              con toalla caliente es una experiencia que todo hombre debería
+              probar.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JR</div>
+              <div class="author-info">
+                <strong>Javier R.</strong><span>Desde 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p>
+              Profesionales de verdad. Te asesoran, te escuchan y el resultado
+              siempre supera expectativas. El local tiene un rollo urbano que
+              engancha.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AS</div>
+              <div class="author-info">
+                <strong>Alejandro S.</strong><span>Cliente nuevo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Tendencias</div>
+          <h2 class="section-title">BLOG <span class="accent">LOCKY</span></h2>
+          <p class="section-sub">
+            Últimas tendencias, consejos de estilo y todo lo que necesitas saber
+            sobre el mundo del grooming masculino.
+          </p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-img">
+              <img
+                src="assets/images/Corte7.jpeg"
+                alt="Tendencias 2026"
+                loading="lazy"
+              />
+              <span class="blog-tag">Tendencias 2026</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">02 · JUL · 2026 · 5 MIN</div>
+              <h3>Los 5 cortes que arrasarán este verano</h3>
+              <p>
+                Desde el textured crop hasta el buzz cut con diseño, repasamos
+                los estilos que dominarán las calles.
+              </p>
+              <a href="javascript:void(0)" class="read-more">Leer más →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal">
+            <div class="blog-img">
+              <img
+                src="assets/images/Corte10.jpeg"
+                alt="Barba perfecta"
+                loading="lazy"
+              />
+              <span class="blog-tag">Grooming</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">28 · JUN · 2026 · 4 MIN</div>
+              <h3>Cómo mantener tu barba perfecta en casa</h3>
+              <p>
+                Rutina completa de cuidado: aceites, cepillos, hidratación y los
+                errores que debes evitar.
+              </p>
+              <a href="javascript:void(0)" class="read-more">Leer más →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal">
+            <div class="blog-img">
+              <img
+                src="assets/images/Corte14.jpeg"
+                alt="Herramientas de barbería"
+                loading="lazy"
+              />
+              <span class="blog-tag">Consejos</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">20 · JUN · 2026 · 6 MIN</div>
+              <h3>Guía definitiva: qué máquina de corte comprar</h3>
+              <p>
+                Analizamos las mejores máquinas del mercado para profesionales y
+                para uso doméstico.
+              </p>
+              <a href="javascript:void(0)" class="read-more">Leer más →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVA -->
+    <section class="booking" id="reserva">
+      <div class="container">
+        <div class="whatsapp-primary reveal">
+          <a
+            href="https://wa.me/34600000000?text=Hola,%20quiero%20reservar%20una%20cita%20en%20Locky%20Barber"
+            target="_blank"
+            rel="noopener"
+            class="whatsapp-btn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            <span>Reservar por WhatsApp</span>
+          </a>
+          <p class="whatsapp-sub">Te respondemos en menos de 1 hora</p>
+        </div>
+        <div class="booking-wrapper">
+          <div class="booking-info reveal">
+            <div class="section-tag">Reserva online</div>
+            <h2>RESERVA TU <span class="accent">CITA</span></h2>
+            <p>
+              Elige día, hora y servicio. Te confirmamos al instante. Sin
+              esperas, sin complicaciones.
+            </p>
+            <ul class="booking-features">
+              <li>Confirmación inmediata por email y SMS</li>
+              <li>Cancelación gratuita hasta 24h antes</li>
+              <li>Pago en local o con tarjeta</li>
+              <li>Atención personalizada garantizada</li>
+            </ul>
+          </div>
+          <form class="booking-form reveal" id="bookingForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Tu nombre"
+                autocomplete="name"
+              />
+              <span class="form-error">Por favor, introduce tu nombre</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="tu@email.com"
+                autocomplete="email"
+              />
+              <span class="form-error">Introduce un email válido</span>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                placeholder="+34 600 000 000"
+                autocomplete="tel"
+              />
+              <span class="form-error">Introduce un teléfono válido</span>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Corte Clásico — 18€</option>
+                <option>Fade & Degradado — 20€</option>
+                <option>Arreglo de Barba — 12€</option>
+                <option>Afeitado Tradicional — 15€</option>
+                <option>Corte + Barba — 28€</option>
+                <option>Diseño & Tinte — desde 25€</option>
+              </select>
+              <span class="form-error">Selecciona un servicio</span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required />
+                <span class="form-error">Selecciona una fecha</span>
+              </div>
+              <div class="form-group">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required />
+                <span class="form-error">Selecciona una hora</span>
+              </div>
+            </div>
+            <button type="submit" class="form-submit" id="formSubmit">
+              <span class="btn-text">Confirmar Reserva →</span>
+              <span class="btn-loading" style="display: none">
+                <span class="spinner"></span> Reservando...
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">Encuéntranos</div>
+          <h2 class="section-title">
+            DÓNDE <span class="accent">ESTAMOS</span>
+          </h2>
+          <p class="section-sub">
+            Visítanos en el corazón de la ciudad. Te esperamos.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h4>Dirección</h4>
+                <p>Calle Alejandro Sánchez, 16<br />28019 Madrid, España</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Teléfono</h4>
+                <p><a href="tel:+34910000000">+34 910 000 000</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:hola@lockybarber.com">hola@lockybarber.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <h4>Horario</h4>
+                <p>
+                  Lun – Vie: 10:00 – 21:00<br />Sáb: 10:00 – 15:00<br />Dom:
+                  Cerrado
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="map-wrap reveal">
+            <iframe
+              src="https://maps.google.com/maps?q=Calle+Alejandro+Sanchez+16+28019+Madrid&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              allowfullscreen
+              title="Ubicación de Locky Barber"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="#" class="logo" style="margin-bottom: 16px">
+              <img
+                src="assets/images/logo.png"
+                alt="Locky Barber"
+                class="logo-img"
+              />
+            </a>
+            <p>
+              Barbería urbana en el corazón de Madrid. Cortes, estilo y actitud
+              desde 2018.
+            </p>
+            <div class="socials">
+              <a href="#" class="social" aria-label="Instagram"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  /></svg
+              ></a>
+              <a href="#" class="social" aria-label="Twitter"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  /></svg
+              ></a>
+              <a href="#" class="social" aria-label="YouTube"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"
+                  /></svg
+              ></a>
+              <a href="#" class="social" aria-label="Telegram"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.14.18-.357.295-.6.295l.213-3.053 5.56-5.023c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#opiniones">Opiniones</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Aviso legal</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul>
+              <li>C/ Alejandro Sánchez, 16</li>
+              <li>28019 Madrid</li>
+              <li>+34 910 000 000</li>
+              <li>hola@lockybarber.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2026 Locky Barber. Todos los derechos reservados.</div>
+          <div>Diseñado con actitud urbana 💈</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
-
-
-              <script>
-                              
-              </script>
-                        </body>
-                        </html>
-                    
